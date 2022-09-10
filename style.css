@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;500;700&display=swap');
+*{
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+head{
+    height: 0px;
+    width: 0px;  
+}
+#description-task{
+    width: 620px;
+    border-radius: 0.5rem;
+}
+.todo-item{
+    flex-direction: row;
+    padding: 10px;
+    width: 800px;
+    justify-content: space-between;
+    background-color: rgb(139, 55, 196);
+    border-radius: 1rem;
+    color: rgb(255, 255, 255);
+}
+.line{
+    text-decoration: line-through;
+}
+.btn-complete{
+    height: 1.6rem;
+    width: 1.6rem;
+}
+ /* .todo-item input:checked ~ .btn-complete {
+    text-decoration: line-through;
+  }  */
+#add-task-btn{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    padding: 10px;
+}
+.btn-delete{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    padding: 10px;
+}
+.buttons{
+    flex-direction: row;
+}
+.flex-wrapper{
+    flex-direction: row;
+    width: 800px;
+    padding: 10px;
+    justify-content: space-between;
+    background-color: rgb(139, 55, 196);
+    border-radius: 1rem;
+}
+.checked .description{
+    text-decoration: rgb(156, 156, 156);
+    text-decoration: line-through;
+    color:rgb(156, 156, 156);
+}
+.checked{
+    background-color: rgb(233, 233, 233);
+}
+
+
+@media screen and (max-width: 900px) {
+    .flex-wrapper{
+        width: 650px;
+    }
+    .todo-item{
+        width: 650px;
+  }
+  #description-task{
+    width: 500px;
+  }
+}
+@media screen and (max-width: 750px) {
+    .flex-wrapper{
+        width: 500px;
+    }
+    .todo-item{
+        width: 500px;
+  }
+  #description-task{
+    width: 350px;
+  }
+}
+
